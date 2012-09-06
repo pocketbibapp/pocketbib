@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/show_error" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/detail_cover_height" >
+
+            <ImageView
+                android:id="@+id/cover_image"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:contentDescription="@string/cover_image_description"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom|left"
+                android:background="#AADEDEDE"
+                android:orientation="horizontal" >
+
+                <RatingBar
+                    android:id="@+id/average_rating"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:alpha="0.5"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/lend_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:onClick="onLendReturnClick"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/borrow_item" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/title_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:paddingLeft="@dimen/margin_medium"
+                android:paddingRight="@dimen/margin_medium"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="38dp" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/secondary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:shadowColor="#55000000"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/layout_metadata"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/container_margin"
+            android:layout_marginRight="@dimen/container_margin"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small" >
+
+            <TextView
+                style="@style/TextSearchSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_information" />
+
+            <View style="@style/Divider.Thin" />
+
+            <TextView
+                android:id="@+id/metadata"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.25"
+                android:paddingLeft="@dimen/margin_small"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/container_margin"
+            android:layout_marginRight="@dimen/container_margin"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small" >
+
+            <TextView
+                style="@style/TextSearchSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_description" />
+
+            <View style="@style/Divider.Thin" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.25"
+                android:paddingLeft="@dimen/margin_small"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/container_margin"
+            android:layout_marginRight="@dimen/container_margin"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_medium"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small" >
+
+            <TextView
+                style="@style/TextSearchSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_actions" />
+
+            <View
+                style="@style/Divider.Thin"
+                android:layout_marginBottom="0dp" />
+
+            <TextView
+                android:id="@+id/ratings"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_selectable"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_action_show_comments"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:onClick="onAllRatingClick"
+                android:paddingLeft="@dimen/margin_small"
+                android:text="@string/all_ratings" />
+
+            <TextView
+                android:id="@+id/bibtex"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_selectable"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_action_bibtex"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:onClick="onExportBibtexClick"
+                android:paddingLeft="@dimen/margin_small"
+                android:text="@string/export_as_bibtex" />
+
+            <TextView
+                android:id="@+id/item_buy"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_selectable"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_action_buy_at_amazon"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:onClick="onBuyClick"
+                android:paddingLeft="@dimen/margin_small"
+                android:text="@string/buy"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

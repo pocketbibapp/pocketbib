@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.kit.tm.telematics.pocketbib"
+    android:versionCode="1"
+    android:versionName="0.9" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".controller.PocketBibApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.PocketBib" >
+        <activity
+            android:name=".controller.activity.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.activity.LoginActivity"
+            android:label="@string/title_login" />
+        <activity
+            android:name=".controller.activity.ExtendedSearchFormActivity"
+            android:label="@string/title_extended_search"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".controller.activity.HelpActivity"
+            android:label="@string/title_help" />
+        <activity
+            android:name=".controller.activity.ItemDetailActivity"
+            android:label="@string/title_item_detail" />
+        <activity
+            android:name=".controller.activity.ItemRatingActivity"
+            android:label="@string/title_item_rating" />
+        <activity
+            android:name=".controller.activity.admin.ManageBorrowedItemsActivity"
+            android:label="@string/title_manage_borrowed_items" />
+        <activity
+            android:name=".controller.activity.SearchResultsActivity"
+            android:label="@string/title_search_results"
+            android:configChanges="orientation">
+        </activity>
+        <activity
+            android:name=".controller.activity.SettingsActivity"
+            android:label="@string/title_preferences" />
+        <activity
+            android:name=".controller.activity.admin.UserAddEditActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controller.activity.admin.AdminActivity"
+            android:label="@string/title_administration"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".controller.activity.admin.ItemAddEditActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controller.activity.admin.ManageCopiesActivity"
+            android:label="@string/title_manage_copies" />
+    </application>
+
+</manifest>

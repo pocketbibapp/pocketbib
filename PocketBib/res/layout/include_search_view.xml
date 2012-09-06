@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_search"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="#22888888"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/button_search"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_selectable"
+        android:scaleType="center"
+        android:src="@drawable/ic_action_search" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:hint="@string/hint_search"
+        android:imeOptions="actionSearch"
+        android:inputType="textNoSuggestions"
+        android:lines="1" />
+
+    <ImageButton
+        android:id="@+id/button_cancel_search"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_selectable"
+        android:scaleType="center"
+        android:src="@drawable/ic_action_cancel" />
+
+</LinearLayout>

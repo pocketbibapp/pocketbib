@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_return"
+        android:icon="@drawable/ic_action_return"
+        android:orderInCategory="1"
+        android:showAsAction="always|withText"
+        android:title="@string/menu_return"/>
+
+    <item
+        android:id="@+id/item_bibtex"
+        android:icon="@drawable/ic_action_bibtex"
+        android:orderInCategory="2"
+        android:showAsAction="always|withText"
+        android:title="@string/menu_bibtex"/>
+
+</menu>

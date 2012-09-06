@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_sort"
+        android:title="@string/menu_sort_short">
+        <menu>
+            <item
+                android:id="@+id/item_sort_by_relevance"
+                android:checkable="true"
+                android:checked="true"
+                android:title="@string/menu_sort_by_relevance"/>
+            <item
+                android:id="@+id/item_sort_by_title"
+                android:checkable="true"
+                android:title="@string/menu_sort_by_title">
+                <menu>
+                    <item
+                        android:id="@+id/item_sort_by_title_asc"
+                        android:checkable="true"
+                        android:title="@string/menu_sort_a_to_z"/>
+                    <item
+                        android:id="@+id/item_sort_by_title_desc"
+                        android:checkable="true"
+                        android:title="@string/menu_sort_z_to_a"/>
+                </menu>
+            </item>
+            <item
+                android:id="@+id/item_sort_by_date"
+                android:checkable="true"
+                android:title="@string/menu_sort_by_date">
+                <menu>
+                    <item
+                        android:id="@+id/item_sort_by_date_asc"
+                        android:checkable="true"
+                        android:title="@string/menu_sort_new_to_old"/>
+                    <item
+                        android:id="@+id/item_sort_by_date_desc"
+                        android:checkable="true"
+                        android:title="@string/menu_sort_old_to_new"/>
+                </menu>
+            </item>
+            <item
+                android:id="@+id/item_sort_by_rating"
+                android:checkable="true"
+                android:title="@string/menu_sort_by_rating">
+                <menu>
+                    <item
+                        android:id="@+id/item_sort_by_rating_desc"
+                        android:checkable="true"
+                        android:title="@string/menu_sort_rating_desc"/>
+                    <item
+                        android:id="@+id/item_sort_by_rating_asc"
+                        android:checkable="true"
+                        android:title="@string/menu_sort_rating_asc"/>
+                </menu>
+            </item>
+        </menu>
+    </item>
+
+</menu>

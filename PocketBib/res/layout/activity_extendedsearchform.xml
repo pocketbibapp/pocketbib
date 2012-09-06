@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_medium" >
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSelectTypeClick"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/TextSearchLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_search_type" />
+
+            <TextView
+                android:id="@+id/label_type"
+                style="@style/TextSearchSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_extended_search_types" />
+
+            <View style="@style/Divider" />
+        </LinearLayout>
+        -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small" >
+
+            <TextView
+                android:id="@+id/label_heading_title"
+                style="@style/TextSearchLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/label_form_title" />
+
+            <EditText
+                android:id="@+id/input_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/label_heading_title"
+                android:layout_toRightOf="@+id/spinner_title"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <Spinner
+                android:id="@+id/spinner_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/input_title"
+                android:layout_alignParentLeft="true"
+                android:entries="@array/label_search_options" />
+
+            <View
+                style="@style/Divider"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/input_title" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small" >
+
+            <TextView
+                android:id="@+id/label_heading_description"
+                style="@style/TextSearchLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/label_form_description" />
+
+            <EditText
+                android:id="@+id/input_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/label_heading_description"
+                android:layout_toRightOf="@+id/spinner_description"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <Spinner
+                android:id="@+id/spinner_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/input_description"
+                android:layout_alignParentLeft="true"
+                android:entries="@array/label_search_options" />
+
+            <View
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/input_description" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small" >
+
+            <TextView
+                android:id="@+id/label_heading_author"
+                style="@style/TextSearchLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/label_form_author" />
+
+            <EditText
+                android:id="@+id/input_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/label_heading_author"
+                android:layout_toRightOf="@+id/spinner_author"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <Spinner
+                android:id="@+id/spinner_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/input_author"
+                android:layout_alignParentLeft="true"
+                android:entries="@array/label_search_options" />
+
+            <View
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/input_author" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_publisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small" >
+
+            <TextView
+                android:id="@+id/label_heading_publisher"
+                style="@style/TextSearchLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/label_form_publisher" />
+
+            <EditText
+                android:id="@+id/input_publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/label_heading_publisher"
+                android:layout_toRightOf="@+id/spinner_publisher"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <Spinner
+                android:id="@+id/spinner_publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/input_publisher"
+                android:layout_alignParentLeft="true"
+                android:entries="@array/label_search_options" />
+
+            <View
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/input_publisher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small" >
+
+            <TextView
+                android:id="@+id/label_heading_year"
+                style="@style/TextSearchLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/label_form_year" />
+
+            <EditText
+                android:id="@+id/input_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/label_heading_year"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned" />
+
+            <View
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/input_year" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_isbn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small" >
+
+            <TextView
+                android:id="@+id/label_heading_isbn"
+                style="@style/TextSearchLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/label_form_isbn" />
+
+            <EditText
+                android:id="@+id/input_isbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/label_heading_isbn"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+            <View
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/input_isbn" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_issn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small" >
+
+            <TextView
+                android:id="@+id/label_heading_issn"
+                style="@style/TextSearchLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/label_form_issn" />
+
+            <EditText
+                android:id="@+id/input_issn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/label_heading_issn"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+            <View
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/input_issn" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_availability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small" >
+
+            <TextView
+                android:id="@+id/label_heading_availability"
+                style="@style/TextSearchLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/label_form_availability" />
+
+            <Spinner
+                android:id="@+id/spinner_availability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/label_heading_availability"
+                android:entries="@array/label_search_availability_options" />
+
+            <View
+                style="@style/Divider"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/spinner_availability" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

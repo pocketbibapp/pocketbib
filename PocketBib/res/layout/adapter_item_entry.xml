@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight" >
+
+    <ImageView
+        android:id="@+id/thumbnail_placeholder"
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/margin_small"
+        android:contentDescription="@string/thumbnail_image_description"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fallback_thumbnail_pre_14" 
+        android:padding="4dp"/>
+
+    <ImageView
+        android:id="@+id/search_result_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/search_result_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@+id/thumbnail_placeholder"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:minLines="1"
+        android:paddingRight="@dimen/margin_small"
+        android:textColor="#FF000000" />
+
+    <TextView
+        android:id="@+id/search_result_second_line"
+        android:layout_width="fill_parent"
+        android:layout_height="24dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/search_result_title"
+        android:layout_toRightOf="@+id/thumbnail_placeholder"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textColor="#AA000000" />
+
+</RelativeLayout>

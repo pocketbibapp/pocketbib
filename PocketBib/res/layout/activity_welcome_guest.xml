@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/label_welcome_guest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_avatar"
+            android:gravity="center_vertical"
+            android:text="@string/label_welcome_guest" />
+
+        <include layout="@layout/show_error" />
+
+        <TextView
+            android:id="@+id/label_welcome_help_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/welcome_arrow_margin_right"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:drawableRight="@drawable/welcome_arrow"
+            android:gravity="right" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="center_horizontal"
+            android:text="@string/label_welcome_help_search"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/label_welcome_help_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/container_margin"
+            android:layout_marginRight="@dimen/container_margin"
+            android:drawableLeft="@drawable/warning"
+            android:drawablePadding="0dp"
+            android:gravity="center"
+            android:text="@string/label_welcome_help_login"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_action_login"
+            android:onClick="onLoginClick"
+            android:text="@string/login_button" />
+    </LinearLayout>
+
+</ScrollView>

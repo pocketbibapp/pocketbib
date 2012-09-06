@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="6dip" >
+
+    <TextView
+        android:id="@+id/search_result_entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#BB000000" />
+
+    <TextView
+        android:id="@+id/search_result_second_row"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:textColor="#88000000" />
+
+</LinearLayout>

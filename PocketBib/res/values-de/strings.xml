@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="hello">Hello World, WelcomeActivity!</string>
+    <string name="app_name">PocketBib</string>
+    <string name="error_unknown">Ein Fehler ist aufgetreten. Bitte wenden Sie Sich an einen Administrator.</string>
+    <string name="error_server_not_available">Der Server ist nicht erreichbar.</string>
+    <string name="error_no_rights">Sie haben keine Berechtigung für diese Aktion.</string>
+    <string name="error_server_problem">Ein Server-Fehler ist aufgetreten. Bitte wenden Sie Sich an einen Administrator.</string>
+    <string name="error_login_failed">Der Login ist fehlgeschlagen. Falsche E-Mail-Adresse oder Passwort.</string>
+    <string name="error_item_already_lent">Dieses Objekt ist zur Zeit ausgeliehen.</string>
+    <string name="error_account_deactivated">Ihr Konto ist gesperrt. Bitte wenden Sie Sich an einen Administrator.</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="label_continue">Weiter</string>
+    <string name="dialog_title_error">Fehler!</string>
+    <string name="optional">(optional)</string>
+    <string name="delete">Löschen</string>
+    <string name="reload_finished">Die Aktualisierung ist abgeschlossen.</string>
+    <string name="saving">Speichern</string>
+    <string name="loading">Laden…</string>
+
+    <!--
+        Draft texts for emails. These strings may use several placeholders: 
+    	%1$s -first name of the receiver, 
+    	%2$s - last name of the receiver, 
+    	%3$s - first name of the sender, 
+    	%4$s - last name of the sender, 
+    	%5$s - title of the item
+    -->
+
+    <string name="email_subject_item_return_request" tools:ignore="StringFormatCount">%3$s %4$s erwünscht die Rückgabe von &#8216;%5$s&#8217;</string>
+    <string name="email_message_item_return_request">Hallo %1$s %2$s,
+        \n\n
+Ich würde gerne \'%5$s\', welches Du zur Zeit ausgeliehen hast, auch lesen. Es wäre schön, wenn du dich bei mir melden könntest, bis wann du es zurückgeben kannst und ob es zu empfehlen ist.\n\nIch bin unter der angegeben E-Mail Adresse zu erreichen.
+\n\n
+Viele Grüße,\n
+%3$s %4$s</string>
+    <string name="empty"></string>
+    <string name="error_dialog_heading">Hupps!</string>
+    <string name="label_information_room_number">Raumnummer</string>
+    <string name="label_information_building_number">Gebäudenummer</string>
+    <string name="label_information_telephone_number">Telefonnummer</string>
+    <string name="label_information_note">Bemerkungen</string>
+
+    <!-- BaseActivity -->
+    <string name="menu_help">Hilfe</string>
+    <string name="menu_search">Suche</string>
+    <string name="menu_login">Anmelden</string>
+    <string name="menu_logout">Abmelden</string>
+    <string name="menu_sort">Sortieren</string>
+    <string name="menu_search_simple">Einfache Suche</string>
+    <string name="menu_search_extended">Erweiterte Suche</string>
+    <string name="menu_search_scan_barcode">Barcode scannen</string>
+    <string name="menu_search_voice">Spracheingabe</string>
+    <string name="menu_administration">Verwaltung</string>
+    <string name="menu_my_account">Mein Konto</string>
+    <string name="dialog_title_logout">Logout</string>
+    <string name="dialog_message_logout">Sie werden abgemeldet.</string>
+    <string name="dialog_action_logout">Abmelden</string>
+    <string name="message_user_invalid">Ihr Benutzerkonto ist gesperrt. Sie wurden automatisch abgemeldet.</string>
+    <string name="error_user_not_active">Ihr Benutzerkonto ist gesperrt. Bitte wenden Sie Sich an einen Administrator.</string>
+
+    <!-- ActionBar Menus -->
+    <string name="menu_forgot_password">Passwort vergessen</string>
+    <string name="menu_register">Registrieren</string>
+    <string name="menu_options">@string/title_preferences</string>
+    <string name="menu_start_extended_search">Suchen</string>
+    <string name="menu_modify_item">Objekt verwalten</string>
+    <string name="menu_search_simple">Einfache Suche</string>
+    <string name="menu_search_extended">Erweiterte Suche</string>
+    <string name="menu_search_barcode">Barcode Scannen</string>
+    <string name="menu_my_account">@string/title_my_account</string>
+    <string name="menu_discard">Änderungen verwerfen</string>
+    <string name="menu_reload">Neu laden</string>
+    <string name="menu_sort">Ergebnisse sortieren</string>
+    <string name="menu_sort_short">Sortieren</string>
+    <string name="menu_save">Speichern</string>
+    <string name="menu_delete">Löschen</string>
+    <string name="menu_sort_by_relevance">Nach Relevanz</string>
+    <string name="menu_sort_by_name">Nach Benutzername</string>
+    <string name="menu_sort_by_title">Nach Titel</string>
+    <string name="menu_sort_by_date">Nach Erscheinungsdatum</string>
+    <string name="menu_sort_by_rating">Nach Bewertung</string>
+    <string name="menu_add">Hinzufügen</string>
+    <string name="menu_sort_a_to_z">A - Z</string>
+    <string name="menu_sort_z_to_a">Z - A</string>
+    <string name="menu_sort_asc">Aufsteigend</string>
+    <string name="menu_sort_desc">Absteigend</string>
+    <string name="menu_sort_new_to_old">Neu - Alt</string>
+    <string name="menu_sort_old_to_new">Alt - Neu</string>
+    <string name="menu_sort_rating_desc">Gut bewertete zuerst</string>
+    <string name="menu_sort_rating_asc">Schlecht bewertete zuerst</string>
+
+    <!-- LoginActivity -->
+    <string name="label_login_message">Bitte melden Sie sich mit ihrer E-Mail-Adresse und Passwort an:</string>
+    <string name="hint_email">E-Mail-Adresse</string>
+    <string name="hint_password">Passwort</string>
+    <string name="label_save_password">Angemeldet bleiben</string>
+    <string name="label_login">Anmelden</string>
+    <string name="title_login">Anmeldung</string>
+    <string name="dialog_title_register">Registrierung</string>
+    <string name="dialog_message_register">Eine Registrierung ist nur persönlich möglich. Bitte wenden Sie Sich an einen Administrator.</string>
+    <string name="dialog_title_forgot_password">Passwort vergessen</string>
+    <string name="dialog_message_forgot_password">Bitte wenden Sie sich an einen Administrator, um Ihr Passwort zurücksetzen zu lassen.</string>
+    <string name="label_login_in_progress">Anmeldung…</string>
+    <string name="dialog_title_no_user_account">Kein Konto?</string>
+    <string name="dialog_message_no_user_account">Bitte klicken Sie auf Registrieren, um ein Benutzerkonto zu erstellen.</string>
+    <string name="dialog_action_no_user_account_yes">Registrieren</string>
+    <string name="dialog_action_no_user_account_no">Abbrechen</string>
+    <string name="dialog_title_enter_password">Passwort eingeben</string>
+    <string name="dialog_message_enter_password">Bitte geben Sie Ihr Passwort zum Anmelden ein.</string>
+    <string name="dialog_action_enter_password_forgot">Passwort vergessen</string>
+
+    <!-- ExtendedSearchFormActivity -->
+    <string name="title_extended_search">Erweiterte Suche</string>
+    <string name="label_search_type">Suche nach</string>
+    <string name="label_search_type_books">Bücher</string>
+    <string name="label_search_type_magazines">Magazine</string>
+    <string name="label_search_type_other">Anderes</string>
+
+    <string-array name="label_form_item_types">
+        <item>@string/label_search_type_books</item>
+        <item>@string/label_search_type_magazines</item>
+        <item>@string/label_search_type_other</item>
+    </string-array>
+
+    <string name="label_form_title">Titel</string>
+    <string name="label_form_description">Beschreibung</string>
+    <string name="label_form_author">Autor</string>
+    <string name="label_form_publisher">Verlag</string>
+    <string name="label_form_year">Veröffentlichungsjahr</string>
+    <string name="label_form_isbn">ISBN</string>
+    <string name="label_form_issn">ISSN</string>
+    <string name="label_form_availability">Verfügbarkeit</string>
+
+    <string-array name="label_search_options">
+        <item>@string/label_search_option_contains</item>
+        <item>@string/label_search_option_equals</item>
+    </string-array>
+
+    <string name="label_search_option_contains">enthält</string>
+    <string name="label_search_option_equals">entspricht</string>
+
+    <string-array name="label_search_availability_options">
+        <item>Egal</item>
+        <item>Verfügbar</item>
+        <item>Nicht verfügbar</item>
+    </string-array>
+
+    <!-- ItemDetailActivity -->
+    <string name="title_item_detail">Details</string>
+    <string name="borrow_item">Ausleihen</string>
+    <string name="return_item">Zurückgeben</string>
+    <string name="not_available">Nicht verfügbar</string>
+    <string name="contact_user">Benutzer kontaktieren</string>
+    <string name="buy">Kaufen</string>
+    <string name="all_ratings">Alle Kommentare anzeigen</string>
+    <string name="cover_image_description">Titelbild</string>
+    <string name="bibtex_share_title">Teile BibTex mit…</string>
+    <string name="dialog_not_logged_in_title">Nicht angemeldet</string>
+    <string name="dialog_action_login">Anmelden</string>
+    <string name="item_information">Informationen</string>
+    <string name="item_actions">Aktionen</string>
+    <string name="export_as_bibtex">Als BibTeX exportieren.</string>
+    <string name="borrow_success">Erfolgreich ausgeliehen.</string>
+    <string name="return_success">Erfolgreich zurückgegeben.</string>
+
+    <!-- Item -->
+    <string name="item_availableCopies">Exemplare</string>
+    <string name="item_description">Beschreibung</string>
+    <string name="item_edition">Edition</string>
+    <string name="item_pageCount">Seitenanzahl</string>
+    <string name="item_position">Position</string>
+    <string name="item_publicationYear">Veröffentlichungsjahr</string>
+    <string name="item_publisher">Verlag</string>
+    <string name="item_title">Titel</string>
+    <string name="item_author">Autor</string>
+    <string name="item_isbn">ISBN</string>
+    <string name="item_issn">ISSN</string>
+    <string name="item_price">Bei Amazon kaufen</string>
+    <string name="item_publicationDate">Veröffentlichungsdatum</string>
+    <string name="thumbnail_image_description">Miniaturbild</string>
+
+    <!-- LoggedInUser -->
+    <string name="user_first_name">Vorname</string>
+    <string name="user_last_name">Nachname</string>
+    <string name="user_email">E-Mail-Addresse</string>
+    <string name="user_password">Passwort</string>
+    <string name="user_telephone">Telefonnummer</string>
+    <string name="user_description">Kommentar</string>
+
+    <!-- SearchResultsActivity -->
+    <string name="title_search_results">Suche</string>
+    <string name="no_entries">Es wurden keine Suchergebnisse gefunden.</string>
+    <string name="query_too_short">Die Suchanfrage ist leider zu kurz.</string>
+    <string name="query_empty_extended_search">Die erweiterte Suche war leer.</string>
+
+    <!-- HelpActivity -->
+    <string name="title_help">Hilfe</string>
+    <string name="dialog_title_about_us">Über uns</string>
+    <string name="menu_about_us">Über uns</string>
+    <string name="dialog_message_about_us"><b>License from  PocketBib</b>\n\n<pre>Copyright 2012 Julien Hadley Jack, Benjamin Heimburger, Yvonne Krammer, Florian Pieper, Johanna Rohloff, Max Vogler\n\n
+Licensed under the Apache License, Version 2.0 (the "License");\n
+You may not use this file except in compliance with the License.\n
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0\n
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n
+See the License for the specific language governing permissions and limitations under the License.</pre>\n\n\n<b>License from  ActionBarSherlock</b>\n<pre>Copyright 2012 Jake Wharton\n
+Licensed under the Apache License, Version 2.0 (the "License");\n
+You may not use this file except in compliance with the License.\n
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0\n
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n
+See the License for the specific language governing permissions and limitations under the License.</pre>\n\n\n<b>License from  SignedRequestsHelper</b>\n\n<pre>Copyright 2012 Amazon Web Services LLC\n\n
+Licensed under the Apache License, Version 2.0 (the "License");\n
+You may not use this file except in compliance with the License.\n
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0\n
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n
+See the License for the specific language governing permissions and limitations under the License.</pre>\n\n\n<b>License from  ZXing</b>\n<pre>Copyright 2012 Denso Wave\n\n
+Licensed under the Apache License, Version 2.0 (the "License");\n
+You may not use this file except in compliance with the License.\n
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0\n
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n
+See the License for the specific language governing permissions and limitations under the License.</pre>\n\n\n<b>License from  Base64 library</b>\n<pre>Copyright 2004 Mikael Grev \n
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n
+Neither the name of the MiG InfoCom AB nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\n
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>\n\n\n<b>License from  Amazon SignedRequestsHelper library</b>\n\n<pre>Copyright 2012 Amazon Web Services LLC \n\n
+Licensed under the Apache License, Version 2.0 (the "License");\n
+You may not use this file except in compliance with the License.\n
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0\n
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n
+See the License for the specific language governing permissions and limitations under the License.</pre></string>
+
+    <!-- ItemRatingActivity -->
+    <string name="title_item_rating">Kommentare</string>
+    <string name="own_rating">Meine Bewertung</string>
+    <string name="own_rating_exists">Meine Bewertung (Klicke zum Bearbeiten)</string>
+    <string name="rating_dialog_title">Jetzt bewerten!</string>
+    <string name="own_comment">Kommentar</string>
+    <string name="no_ratings">Keine anderen Kommentare.</string>
+    <string name="dialog_own_rating_missing">Bitte geben Sie eine Bewertung ab.</string>
+    <string name="dialog_success_title">Erfolg!</string>
+    <string name="dialog_success_message">Ihr Kommentar wurde hinzugefügt oder bearbeitet.</string>
+    <string name="add_rating">Füge Kommentar hinzu</string>
+    <string name="modify_rating">Bearbeite Kommentar</string>
+    <string name="total_ratings">Andere Kommentare (%1$s total)</string>
+    <string name="total_ratings_default">Andere Kommentare</string>
+    <string name="no_own_rating">Klicke hier um dein Kommentar hinzuzufügen.</string>
+
+    <!-- UserAddEditActivity -->
+    <string name="title_user_edit">Konto bearbeiten</string>
+    <string name="title_user_add">Konto erstellen</string>
+    <string name="title_my_account">Mein Konto</string>
+    <string name="error_user_not_found">Der Benutzer konnte nicht gefunden werden.</string>
+    <string name="dialog_title_delete_user">Löschen?</string>
+    <!-- %1$s = first name, %2$s = last name -->
+    <string name="dialog_message_delete_user">%1$s %2$s wird gelöscht.</string>
+    <string name="dialog_message_delete_user_fallback">Der Benutzer wird gelöscht.</string>
+    <string name="dialog_action_delete_user">Löschen</string>
+    <string name="dialog_title_deletion">Löschen…</string>
+    <string name="dialog_title_save_changes">Änderungen speichern?</string>
+    <string name="dialog_message_save_changes">Wollen Sie eventuelle Änderungen vor dem Verlassen speichern?</string>
+    <string name="dialog_action_save_changes_yes">Speichern</string>
+    <string name="dialog_action_save_changes_abort">Abbrechen</string>
+    <string name="dialog_action_save_changes_no">Verwerfen</string>
+    <string name="label_form_email">E-Mail-Adresse:</string>
+    <string name="label_form_password">Passwort:</string>
+    <string name="button_change_password">Ändern</string>
+    <string name="label_password_automatically_generated">(automatisch erstellt)</string>
+    <string name="label_form_name">Name:</string>
+    <string name="label_hint_first_name">Vorname</string>
+    <string name="label_hint_last_name">Nachname</string>
+    <string name="label_form_admin">Administrator</string>
+    <string name="label_form_active">Aktiv</string>
+    <string name="label_switch_active">Benutzerkonto aktivieren</string>
+    <string name="label_switch_admin">Administratorkonto</string>
+    <string name="label_form_id">Benutzer-ID</string>
+    <string name="label_no_id">(wird beim Speichern erzeugt)</string>
+    <string name="button_show_lent_items">Anzeigen</string>
+    <string name="label_form_lent_items">Ausgeliehene Objekte:</string>
+    <string name="dialog_title_saving">Speichern…</string>
+    <string name="dialog_title_reloading">Neu laden…</string>
+    <string name="dialog_title_change_password">Passwort ändern</string>
+    <string name="button_set_password_manually">Selbst eintippen</string>
+    <string name="button_create_password_automatically">Automatisch generieren</string>
+    <string name="button_reset_password_via_email">Per E-Mail zurücksetzen</string>
+    <string name="dialog_title_enter_new_password">Passwort eingeben</string>
+    <string name="dialog_title_confirm_password">Passwort bestätigen</string>
+    <string name="toast_password_set">Das Password wird beim Klick auf Speichern übernommen.</string>
+    <string name="dialog_message_passwords_dont_match">Die Passwörter stimmen nicht überein</string>
+    <string name="dialog_action_passwords_dont_match_try_again">Erneut eingeben</string>
+    <string name="dialog_title_user_exists">Benutzer existiert schon</string>
+    <string name="dialog_message_user_exists">Der Benutzer existiert schon. Wollen Sie das Konto bearbeiten?</string>
+    <string name="dialog_message_min_password_length">Passwörter müssen mindestens 6 Zeichen haben.</string>
+
+    <!-- WelcomeActivity -->
+    <string name="label_welcome">Willkommen %1$s %2$s.</string>
+    <string name="label_lend_books">Ausgeliehene Bücher</string>
+    <string name="login_button">Anmelden</string>
+    <string name="label_welcome_guest">Sie sind nicht angemeldet.</string>
+    <string name="label_welcome_help_search">Zum Suchen auf die Lupe klicken</string>
+    <string name="label_welcome_help_login">Sie müssen sich anmelden um alle Funktionen zu nutzen</string>
+    <string name="menu_return">Zurückgeben</string>
+    <string name="menu_bibtex">BibTeX</string>
+    <string name="dialog_title_return_items">Zurückgeben</string>
+
+    <plurals name="dialog_message_return_items">
+        <item quantity="one">Ein Bibliotheksgegenstand wird zurückgegeben.</item>
+        <item quantity="other">%d Bibliotheksgegenstände werden zurückgegeben.</item>
+    </plurals>
+
+    <!-- PreferenceActivity -->
+    <string name="title_preferences">Einstellungen</string>
+    <string name="preferences_host">Hostadresse</string>
+    <string name="preferences_port">Portnummer</string>
+    <string name="preferences_cache_size">Cachegröße</string>
+    <string name="save_button">Speichern</string>
+    <string name="search_hint">Einfach Suche</string>
+    <string name="reload">Neu laden</string>
+    <string name="preferences_cache_settings">Cache Einstellungen</string>
+    <string name="preferences_host_message">Geben Sie hier die Host-Adresse ein.</string>
+    <string name="preferences_port_message">Geben Sie hier die Port Nummer ein.</string>
+    <string name="preferences_cache_message">Geben Sie hier die gewünschte Cachegröße in Mb ein.</string>
+    <string name="preferences_ssl_on">Verbindung via HTTPS</string>
+    <string name="preferences_ssl_off">Verbindung via HTTP</string>
+    <string name="preferences_ssl_title">Sichere Verbindung</string>
+
+    <string-array name="preferences_cache_quality_entries">
+        <item name="100">Maximum</item>
+        <item name="80">Hoch</item>
+        <item name="50">Niedrig</item>
+    </string-array>
+
+    <string name="preferences_cache_quality">Cache-Qualität</string>
+    <string name="title_server_preferences">Verbindung</string>
+
+    <!-- AdminActivity -->
+    <string name="title_administration">Verwaltung</string>
+    <string name="label_tab_items">Bibliothek</string>
+    <string name="label_tab_users">Konten</string>
+    <string name="dialog_message_email_required">Bitte tragen Sie eine E-Mail-Adresse ein.</string>
+    <string name="dialog_message_valid_email_required">Bitte tragen Sie eine korrekte E-Mail-Adresse im Format max@muster.de ein.</string>
+    <string name="dialog_message_name_required">Bitte tragen Sie Vor- und Nachnamen ein.</string>
+    <string name="hint_search">Suche…</string>
+    <string name="label_no_users_found">Es wurden keine Benutzer gefunden.</string>
+    <string name="label_no_items_found">Es wurden Keine Bibliotheksobjekte gefunden.</string>
+    <string name="label_form_edition">Auflage</string>
+    <string name="label_form_position">Position in der Bibliothek</string>
+    <string name="label_form_publication_date">Veröffentlichungsdatum</string>
+    <string name="label_form_page_count">Seitenzahl</string>
+    <string name="label_form_copy_count">Anzahl an verfügbaren Exemplaren</string>
+    <string name="button_manage_copies">Verwalten</string>
+    <string name="label_form_average_rating">Durchschnittliche Bewertung</string>
+    <string name="label_enter_query">Suchbegriff eingeben, um die Bibliothek zu durchsuchen.</string>
+
+    <!-- ItemAddEditActivity -->
+    <string name="label_form_item_type">Typ auswählen</string>
+    <string name="label_form_title">Titel</string>
+    <string name="label_form_item_type_other">Typ beschreiben</string>
+    <string name="hint_item_type">Z.B. CD, Diplomarbeit, …</string>
+    <string name="title_edit_item">Bearbeiten</string>
+    <string name="title_add_item">Neu</string>
+    <string name="label_available_copies">%1$d verfügbar</string>
+    <string name="label_available_copies_detailed">%1$d/%2$d verfügbar</string>
+    <string name="dialog_title_choose_date_input">Veröffentlichungs-Typ wählen</string>
+    <string name="dialog_item_set_publication_year">Jahr (wie bei Büchern üblich)</string>
+    <string name="dialog_item_set_publication_date">Genaues Datum</string>
+    <string name="dialog_title_choose_year">Veröffentlichungsjahr eingeben</string>
+    <string name="dialog_title_choose_publication_date">Veröffentlichungsdatum eingeben</string>
+    <string name="dialog_title_load_external_information">Informationen nachladen?</string>
+    <string name="dialog_message_load_external_information">Informationen aus dem Internet automatisch eintragen lassen?</string>
+    <string name="dialog_action_load_external_information">Laden</string>
+    <string name="dialog_title_missing_information">Fehlende Daten</string>
+    <string name="dialog_message_missing_information">Bitte füllen Sie alle Pflichtfelder aus.</string>
+    <string name="dialog_message_missing_title">Bitte füllen Sie das Titel-Feld aus.</string>
+    <string name="dialog_message_missing_author">Bitte füllen Sie das Autor-Feld aus.</string>
+    <string name="dialog_message_missing_type">Bitte füllen Sie das Typ-Feld aus.</string>
+    <string name="dialog_message_missing_publisher">Bitte füllen Sie das Verlag-Feld aus.</string>
+    <string name="dialog_message_wrong_isbn">Bitte tragen Sie eine gültige ISBN ein.</string>
+    <string name="dialog_message_wrong_issn">Bitte tragen Sie eine gültige ISSN ein.</string>
+    <string name="dialog_title_item_exists">Das Objekt existiert schon.</string>
+    <string name="dialog_message_item_exists">Möchten Sie das bereits existierende Objekt bearbeiten?</string>
+    <string name="dialog_button_item_exists">Bearbeiten</string>
+    <string name="dialog_message_delete_item_no_title">Das Objekt wird gelöscht.\n\nAchtung: Dabei werden auch die Exemplare gelöscht.</string>
+    <string name="dialog_message_delete_item">\'%1$s\' wird gelöscht.</string>
+    <string name="dialog_message_delete_item_single">\'%1$s\' wird gelöscht.\n\nAchtung: Dabei wird auch ein Exemplar gelöscht.</string>
+    <string name="dialog_message_delete_item_multiple">\'%1$s\' wird gelöscht.\n\nAchtung: Dabei werden auch %2$s Exemplare gelöscht.</string>
+    <string name="toast_item_deleted">Löschen erfolgreich.</string>
+    <string name="toast_item_saved">Speichern erfolgreich.</string>
+
+    <!-- ManageCopiesActivity -->
+    <string name="title_manage_copies">Exemplare verwalten</string>
+    <string name="label_item_copies">Exemplare</string>
+    <string name="menu_add_copy">Exemplar(e) hinzufügen</string>
+    <string name="dialog_action_add_copies">Bitte wählen Sie die Anzahl der zu erstellenden Exemplare.</string>
+    <string name="dialog_action_add_copies_title">Exemplare hinzufügen</string>
+    <string name="label_no_copies">Es sind keine Exemplare verfügbar.</string>
+    <string name="label_item_delete">Exemplar löschen</string>
+    <string name="dialog_title_delete">Löschen?</string>
+    <string name="label_copy_lent_by">Ausgeliehen von %1$s %2$s</string>
+    <string name="label_copy_available">Verfügbar</string>
+    <string name="label_copy_id">Exemplar #%1$d</string>
+    <string name="label_show_copies_for">Zeige Exemplare von:</string>
+
+    <string-array name="dialog_number_picker">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- ManageBorrowedItemsActivity -->
+    <string name="title_manage_borrowed_items">Ausgeliehene Objekte</string>
+    <string name="label_no_items">Es sind keine Bibliotheksobjekte ausgeliehen.</string>
+
+    <plurals name="dialog_message_delete_multiple">
+        <item quantity="one">Ein Exemplar wird entfernt.</item>
+        <item quantity="other">%d Exemplare werden entfernt.</item>
+    </plurals>
+
+    <!-- Strings to remove Lint Warnings -->
+    <string name="default_copy_count">1</string>
+    <string name="default_lent_items">0</string>
+    <string name="default_extended_search_types">Bücher, Magazine, Anderes</string>
+
+</resources>

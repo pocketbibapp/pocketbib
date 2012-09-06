@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="thumbnail_width">32dp</dimen>
+    <dimen name="thumbnail_height">48dp</dimen>
+    
+    <dimen name="margin_xxl">32dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="container_margin">0dp</dimen>
+    
+    <dimen name="detail_cover_height">200dp</dimen>
+    <dimen name="error_smiley_size">128dp</dimen>
+    <dimen name="error_top_margin">36dp</dimen>
+    <dimen name="welcome_arrow_margin_right">48dp</dimen>
+
+</resources>

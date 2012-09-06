@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:id="@+id/layout_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/error_top_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label_error_smiley"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_horizontal"
+            android:text="@array/error_smilies"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/error_smiley_size" />
+
+        <TextView
+            android:id="@+id/label_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:gravity="center_horizontal"
+            android:text="@string/error_unknown" />
+
+        <Button
+            android:id="@+id/button_error_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onErrorReloadClick"
+            android:text="@string/reload" 
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/ic_action_reload"/>
+
+        <ProgressBar
+            android:id="@+id/progress_error_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

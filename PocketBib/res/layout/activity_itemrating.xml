@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/container_margin"
+    android:layout_marginRight="@dimen/container_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_medium"
+    android:paddingLeft="@dimen/margin_small"
+    android:paddingRight="@dimen/margin_small" >
+
+    <include layout="@layout/show_error" />
+
+    <!-- Own Rating -->
+
+    <TextView
+        android:id="@+id/own_rating_title"
+        style="@style/TextSearchSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onOwnRatingClick"
+        android:clickable="true"
+        android:paddingTop="8dp"
+        android:text="@string/own_rating" />
+
+    <View
+        style="@style/Divider.Thin"
+        android:layout_marginBottom="0dp" />
+
+    <ListView
+        android:id="@+id/own_rating"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/no_own_rating"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selectable"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onOwnRatingClick"
+        android:paddingBottom="32dp"
+        android:paddingTop="16dp"
+        android:text="@string/no_own_rating"
+        android:visibility="gone" />
+
+    <!-- All Ratings -->
+
+    <TextView
+        android:id="@+id/total_ratings"
+        style="@style/TextSearchSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_ratings" />
+
+    <View
+        style="@style/Divider.Thin"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/rating_no_items"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/no_ratings"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/item_ratings"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

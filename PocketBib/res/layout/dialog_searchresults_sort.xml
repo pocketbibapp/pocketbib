@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/search_sort_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/search_sort_by_relevance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/menu_sort_by_relevance" />
+
+        <RadioButton
+            android:id="@+id/search_sort_by_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_sort_by_title" />
+
+        <RadioButton
+            android:id="@+id/search_sort_by_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_sort_by_date" />
+
+        <RadioButton
+            android:id="@+id/search_sort_by_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_sort_by_rating" />
+    </RadioGroup>
+
+    <include layout="@layout/divider" />
+
+    <RadioGroup
+        android:id="@+id/search_sort_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/search_sort_asc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_sort_asc" />
+
+        <RadioButton
+            android:id="@+id/search_sort_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/menu_sort_desc" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="pocketbib.kit.server_settings"
+        android:title="@string/title_server_preferences" >
+        <EditTextPreference
+            android:defaultValue="fpieper.de"
+            android:key="pocketbib.kit.server_adress"
+            android:summary="@string/preferences_host_message"
+            android:title="@string/preferences_host" />
+        <EditTextPreference
+            android:defaultValue="443"
+            android:key="pocketbib.kit.server_port"
+            android:summary="@string/preferences_port_message"
+            android:title="@string/preferences_port" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pocketbib.kit.server_ssl"
+            android:summaryOff="@string/preferences_ssl_off"
+            android:summaryOn="@string/preferences_ssl_on"
+            android:title="@string/preferences_ssl_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pocketbib.kit.cache_size"
+        android:title="@string/preferences_cache_settings" >
+        
+        <ListPreference
+            android:defaultValue="@string/preferences_cache_quality_default_value"
+            android:entries="@array/preferences_cache_quality_entries"
+            android:entryValues="@array/preferences_cache_quality_values"
+            android:key="pocketbib.kit.cache_quality"
+            android:title="@string/preferences_cache_quality" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
